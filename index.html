@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parthu's Portfolio</title>
+
+    <meta name="description" content="Portfolio of Parthu — projects, skills, and contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#home">Parth</a>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-label="Hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Parth Saha</h1>
+          <p class="subtitle">Developer interested in DSA, competitive programming, WEB3, machine learning, and artificial intelligence</p>
+          
+          
+        </div>
+      </section>
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>About me</h2>
+            <p>
+              I’m a developer who enjoys solving data structures and algorithms problems, 
+               and building websites that look good and work well. 
+              I have also started learning WEB3 soon y'all will see me in hackathons too.
+              ML after 2 years because i love maths.
+            <p>
+              When I’m not coding, I enjoy taking fun of my friends and family.
+              I also love to read books, and read technical blogs and listening tech podcasts.
+              I know i am a nerd😂 and a boring person as well😭
+            </p>
+          </div>
+          <div>
+            <ul class="highlights">
+              <li>DSA</li>
+              <li>CP</li>
+              <li>WEB3</li>
+              <li>ML</li>
+              <li>AI</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="grid projects-grid">
+            <article class="card">
+              <h3>MIDNIGHT CRAVINGS.in</h3>
+              <p>A late nightfood ordering website made using HTML,CSS and LOVE❤️</p>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live</a>
+                <a class="btn small ghost" href="#">Code</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>PERSONAL PORTFOLIO</h3>
+              <p>A portfolio made using HTML and CSS just to give introduction of myself 😏</p>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live</a>
+                <a class="btn small ghost" href="#">Code</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>SPOTIFY CLONE (coming soon)</h3>
+              <p>Spotify clone made using HTML,CSS and JAVASCRIPT (SOON 🔥)</p>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live</a>
+                <a class="btn small ghost" href="#">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (Basics)</li>
+            <li>C++</li>
+            <li>Git & GitHub</li>
+            <li>Python</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Want to collaborate or have feedback? Reach out I would love to connect.
+          </p>
+            </a>
+            <a class="contact" href="https://github.com/Parthu-code" target="_blank" rel="noopener">
+              <img src="git hub.png" alt="GitHub" />
+              <span>GitHub</span>
+            </a>
+            <a class="contact" href="https://linkedin.com/in/parth-saha" target="_blank" rel="noopener"
+              <img src="linkedin.png" alt="LinkedIn" />
+              <span>LinkedIn</span>
+            </a>
+            <a class="contact" href="https://x.com/HustleWithParth" target="_blank" rel="noopener">
+              <img src="twitter.png" alt="Twitter" />
+              <span>Twitter</span>
+            </a>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> DON'T DARE COPY MY GARBAGE</p>
+      </div>
+    </footer>
+
+    <script>
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
